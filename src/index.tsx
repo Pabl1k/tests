@@ -3,10 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {splitIntoWords} from "./01-hello-tests/01";
+import {User} from "./06/06-callback";
+
+const sentence = 'Hello my friends';
+const result = splitIntoWords(sentence)
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
